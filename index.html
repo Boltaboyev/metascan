@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metascan</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-[#e5e5e5]">
+
+    <header class="border-b bg-[#fff] border-b-[#ccc]">
+        <div class="container2">
+            <nav class="navbar flex justify-between items-center py-[13px]">
+
+                <nav class="navbar-logo">
+                    <a href="./index.html"><img src="./img/logo.png" alt="" class="max-[350px]:w-[80%]"></a>
+                </nav>
+
+                <nav class="nav-location flex justify-center items-center gap-[3px] max-[745px]:hidden">
+                    <img src="./svg/location.svg" alt="">
+                    <a href="#!"
+                        class="border-b-[2px] hover:text-[#ffcd11] border-dashed border-[#ffcd11] text-[14px]">Йошкар-Ола</a>
+                </nav>
+
+                <input type="checkbox" name="" id="nav" class="hidden">
+                <ul
+                    class="flex justify-center items-center gap-[10px] text-[14px] font-[400] text-[#333] max-[1225px]:fixed max-[1225px]:left-[-100%] max-[1225px]:top-0 max-[1225px]:h-[100vh] max-[1225px]:w-[50%] max-[1225px]:flex-col max-[1225px]:bg-white z-[888] max-[1225px]:gap-[20px] max-[600px]:w-[70%] max-[350px]:w-[85%]">
+
+                    <label for="nav" class="hidden max-[1225px]:block absolute right-[30px] top-[20px] text-[24px]">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+
+                    <li><a href="#!" class="hover:text-[#ffcd11]">О компании</a></li>
+                    <li><a href="#!" class="hover:text-[#ffcd11]">Блог</a></li>
+                    <li><a href="#!" class="hover:text-[#ffcd11]">Частые вопросы</a></li>
+                    <li><a href="#!" class="hover:text-[#ffcd11]">Сервис и гарантия</a></li>
+                    <li><a href="#!" class="hover:text-[#ffcd11]">Доставка и оплата</a></li>
+                    <li><a href="#!" class="hover:text-[#ffcd11]">Контакты</a></li>
+
+                    <a href="tel:8 800 444-00-27" class="text-[15px] font-[600] hidden max-[700px]:block">8 800
+                        444-00-27</a>
+
+                    <a href="#!"
+                        class="border border-[#000] rounded-[8px] p-[6px_9px] hover:bg-black hover:text-[#fff] active:scale-[.95] hidden max-[700px]:block ">Заказать
+                        звонок</a>
+                </ul>
+
+                <label for="nav"
+                    class="black_label h-[100vh] w-full fixed top-0 left-0 bg-[#00000042] backdrop-blur-[6px] z-[777] hidden"></label>
+
+                <a href="tel:8 800 444-00-27" class="text-[15px] font-[600] max-[700px]:hidden">8 800 444-00-27</a>
+
+                <a href="#!"
+                    class="border border-[#000] rounded-[8px] p-[6px_9px] hover:bg-black hover:text-[#fff] active:scale-[.95] max-[700px]:hidden">Заказать
+                    звонок</a>
+
+
+                <label for="nav" class="hidden max-[1225px]:block text-[24px] text-[#ffcd11]">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </nav>
+        </div>
+    </header>
+
+    <div class="py-[13px] bg-white">
+        <div class="container2">
+            <div class="navbar_bottom">
+                <nav class="navbar_bottom_links flex justify-between items-center max-[1200px]:justify-end">
+                    <ul class="flex justify-start items-center gap-[10px] text-[14px] font-[500] max-[1200px]:hidden">
+                        <li><a href="#!" class="hover:text-[#ffcd11]">Металлоискатели</a></li>
+                        <li><a href="#!" class="hover:text-[#ffcd11]">Оборудование для безопасности</a></li>
+                        <li><a href="#!" class="hover:text-[#ffcd11]">Тактические металлоискатели</a></li>
+                        <li><a href="#!" class="hover:text-[#ffcd11]">Очистители воздуха</a></li>
+                        <li><a href="#!" class="hover:text-[#ffcd11]">Дополнения и аксессуары</a></li>
+                    </ul>
+
+                    <nav class="flex justify-end items-center gap-[20px]">
+                        <a href="#!" class="flex justify-center items-center gap-[6px]">
+                            <img src="./svg/sign.svg" alt="">
+                            <span>Вход</span>
+                        </a>
+
+                        <a href="#!"><img src="./svg/cart.svg" alt=""></a>
+                    </nav>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <section class="video my-[30px]">
+        <div
+            class="container2 bg-white rounded-[16px] grid grid-cols-[1fr_1.8fr] overflow-hidden max-[1195px]:grid-cols-[1fr_1fr] max-[840px]:grid-cols-1">
+            <div class="p-[30px] max-[340px]:p-[15px] flex flex-col justify-center items-start gap-[20px]">
+                <h1
+                    class="font-[500] leading-[125%] text-[40px] max-[540px]:text-[30px] max-[370px]:text-[22px] max-[310px]:text-[19px]">
+                    Откройте для <br class="max-[540px]:hidden"> себя мир поиска <br class="max-[540px]:hidden"> и
+                    безопасности
+                </h1>
+
+                <p class="text-[14px] font-[400] max-[370px]:text-[13px]">Все о компании «Метаскан» за одну минуту</p>
+
+                <a href="#!"
+                    class="p-[10px_15px] max-[370px]:w-full text-center bg-black text-[#fff] rounded-[6px] active:scale-[0.97] hover:bg-slate-900">Смотреть
+                    видео</a>
+            </div>
+
+            <div class="flex justify-center items-center">
+                <div
+                    class="playBtn h-[60px] w-[60px] rounded-[50%] bg-[#ffff] absolute flex justify-center items-center cursor-pointer z-10 max-[400px]:h-[40px] max-[400px]:w-[40px]">
+                    <i class="fa-solid fa-play text-black text-[20px] max-[400px]:text-[16px]"></i>
+                </div>
+                <video muted plays-inline id="video" poster="./img/poster.png" class="object-cover h-full w-full">
+                    <source src="./img/video.mp4" type="video/mp4" class="h-full w-full" />
+                </video>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cards py-[10px]">
+        <div class="container2">
+            <div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="flex flex-col justify-evenly items-start p-[20px] text-white h-[230px]">
+                                <h3 class="text-[25px] font-[800]">Распродажа</h3>
+                                <p>Сэкономьте на покупке грунтовые металлоискатели</p>
+                                <a href="#!" class="p-[5px_10px] rounded-[6px] bg-[#ffcd11] active:scale-[.95]">до
+                                    45%</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flex flex-col justify-evenly items-start p-[20px] text-[#31d8ea] h-[230px]">
+                                <h3 class="text-[25px] font-[800]">Подводные металлоискатели</h3>
+                                <p>поиск на глубинах <br class="max-[680px]:hidden"> до 200 метров</p>
+
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flex flex-col justify-evenly items-start p-[20px] text-white h-[230px]">
+                                <a href="#!" class="p-[5px_10px] rounded-[6px] bg-[#ffcd11] active:scale-[.95]">
+                                    Новинка</a>
+                                <h3 class="text-[25px] font-[800]">Alfamarine 5000</h3>
+                                <p>Тактический <br class="max-[680px]:hidden"> металлоискатель <br class="max-[680px]:hidden"> для поиска мин</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // video pause and play btn ------------------------------------------------------------------------
+        let Video = document.getElementById("video")
+        let Btn = document.querySelector(".playBtn")
+
+        function Vid() {
+            Video.play()
+            Btn.style.display = "none"
+        }
+
+        function Vidstop() {
+            Video.pause()
+            Btn.style.display = "flex"
+        }
+
+        Btn.addEventListener("click", () => {
+            Vid()
+        })
+
+        Video.addEventListener("click", () => {
+            Vidstop()
+            Btn.style.background = "#1d72d2"
+        })
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                680: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                680: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+        });
+    </script>
+</body>
+
+</html>
